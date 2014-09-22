@@ -1,9 +1,9 @@
 #!/usr/bin/python
 
-# CSV to CSDL tags social profiling script
+# CSV to CSDL tags - social profiling script
 #	Justin @ DataSift
 #
-# Usage: profiling_script.py [customer_ids].csv [new_file].txt
+# Usage: profiling_script.py [customer_ids].csv [new_file].csdl
 
 # The format of the .csv file needs to be [customer id] [twitter.user.id] [facebook.author.id]
 # This script is fully extensible and future iterations will allow for the targets to be
@@ -13,7 +13,7 @@ import csv
 import sys
 
 if len(sys.argv) != 3:
-    print "Usage:$ profiling_script.py [customer_ids].csv [new_file].txt"
+    print "Usage:$ profiling_script.py [customer_ids].csv [new_file].csdl"
     sys.exit("please follow proper function usage")
     pass
 
